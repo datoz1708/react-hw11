@@ -1,13 +1,26 @@
-import React, { Component } from "react";
-import HelloWorld from "./helloworld";
+// App.js
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
 
-class App extends Component {
+class App extends React.Component {
+ 
+  showAlert = (message) => {
+    window.alert(message);
+  }
+
   render() {
     return (
-      <div className="App">
-        <HelloWorld/>
+      <div>
+        <Header />
+        
+        <button onClick={() => this.showAlert('გამარჯობა, მსოფლიო')} style={{ display: 'block', margin: '20px auto', padding: '10px 20px' }}>
+          Click me
+        </button>
+        
+        <Footer />
       </div>
-    )
+    );
   }
 }
 

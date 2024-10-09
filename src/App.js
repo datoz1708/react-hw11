@@ -13,7 +13,6 @@ const App = () => {
 
   return (
     <div>
-      <h1>რიცხვების სია</h1>
       <NumbersList numbers={numbersArray} />
     </div>
   );

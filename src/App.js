@@ -1,19 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function App() {
-  
-  const [count, setCount] = useState(0);
+  const num1 = 5;
+  const num2 = 10;
+  let message;
 
-  const incrementByTwo = () => {
-    setCount(prevCount => prevCount + 2);
-  };
+  if (num1 > num2) {
+    message = num1;
+  } else {
+    message = num2;
+  }
 
   return (
-    <div>
-      <p>შედეგი: {count}</p>
-      <button onClick={incrementByTwo}>+2</button>
+    <div className="App">
+      <h1>{message}</h1>
     </div>
   );
 }
 
 export default App;
+

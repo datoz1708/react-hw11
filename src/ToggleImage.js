@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import chameleon from './images/chameleon.jpg';
 
 const ToggleImage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -8,16 +9,16 @@ const ToggleImage = () => {
   };
 
   return (
-    <div>
-      <button onClick={toggleImage}>
-        {isVisible ? 'Hide Image' : 'Show Image'}
+    <div style={{ textAlign: 'center' }}>
+      <button onClick={toggleImage} style={{ display: 'block', margin: '20px auto' }}>
+        {isVisible ? 'False' : 'True'}
       </button>
 
       {isVisible && (
         <img
-          src="ToggleImage"
+          src={chameleon}
           alt="Sample"
-          style={{ width: '300px', marginTop: '20px' }}
+          style={{ width: '300px', margin: '20px auto', display: 'block' }}
         />
       )}
     </div>

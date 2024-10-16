@@ -17,7 +17,7 @@ const ToggleImage = () => {
       {isVisible && (
         <img
           src={chameleon}
-          alt="Sample"
+          alt="chameleon"
           style={{ width: '300px', margin: '20px auto', display: 'block' }}
         />
       )}
